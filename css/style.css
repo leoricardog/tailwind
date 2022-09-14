@@ -1,0 +1,7 @@
+.bg-pizza{
+    background-image: url("../imgs/bg-pizza.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(-5);
+}
