@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tailwind CSS Test</title>
+</head>
+<body>
+
+<div class="relative">
+    <a href="step3.html" class="absolute top-5 left-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+             class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"/>
+        </svg>
+    </a>
+</div>
+<div class="h-screen grid grid-rows-6 text-center px-4">
+    <div class="row-span-2 mx-auto grid content-end">
+        <img src="imgs/step4.png" alt="logo">
+    </div>
+    <div class="grid row-span-4 grid-rows-7">
+        <div>
+            <h1 class="text-5xl font-bold">
+                Let's you in
+            </h1>
+        </div>
+        <div>
+            <a class="border rounded-lg py-4 px-20 hover:bg-gray-200">
+                <img class="inline" src="imgs/fb.png"> Continue with Facebook</a>
+        </div>
+        <div>
+            <a class="border rounded-lg py-4 px-24 hover:bg-gray-200">
+                <img class="inline" src="imgs/google.png"> Continue with Google</a>
+        </div>
+        <div>
+            <a class="border rounded-lg py-4 px-24 hover:bg-gray-200">
+                <img class="inline" src="imgs/apple.png"> Continue with Apple</a>
+        </div>
+        <div>
+            <div class="flex">
+                <div class="grow grid content-center">
+                    <hr>
+                </div>
+                <div class="grow-0 px-4"><p class="text-gray-500">or</p></div>
+                <div class="grow grid content-center">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="signin.html"
+               class="block w-full font-bold bg-green-500 text-white rounded-full py-4 hover:bg-green-800">Sign in with your
+                phone number</a>
+        </div>
+        <div>
+            <p class="text-gray-400 text-xs">Don't have an account? <a href="signup.html" class="text-green-600 font-bold">Sign up</a></p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
