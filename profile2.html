@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tailwind CSS Test</title>
+</head>
+<body>
+
+<div class="h-screen grid grid-rows-7 text-center h-screen ">
+    <div class="relative">
+        <a href="profile.html" class="absolute top-5 left-6 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"/>
+            </svg>
+        </a>
+        <h1 class="text-xl font-bold pt-5 text-center">
+            Set Your Location
+        </h1>
+    </div>
+
+    <div class="relative flex justify-center w-full row-span-3">
+        <img class="" src="imgs/location.png"/>
+    </div>
+
+    <div class="flex items-center justify-center mt-4">
+        <h1 class="text-xl font-bold">
+            Location
+        </h1>
+    </div>
+
+    <div class="px-4">
+        <div class=" flex  flex-wrap items-stretch py-8">
+                <span class="z-10 h-full leading-snug font-normal absolute text-center text-slate-300 absolute bg-transparent right-10
+                rounded text-base items-center justify-center w-6 h-8 pl-3 py-4">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+            </svg>
+                </span>
+            <input type="text" placeholder="Email"
+                   class="p-2.5 py-4 bg-gray-50 rounded-lg text-gray-900 border-gray-100 outline-none focus:outline-none
+                       focus:ring focus:ring-green-400 w-full pl-14 pr-14 focus:bg-green-50"/>
+        </div>
+    </div>
+
+    <div class="grid content-end pb-4 px-4">
+        <a href="pin.html"
+           class="block w-full font-bold bg-green-500 text-white rounded-full py-4 hover:bg-green-800">Continue</a>
+    </div>
+</div>
+
+</body>
+</html>

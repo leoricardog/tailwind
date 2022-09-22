@@ -5,3 +5,11 @@
     background-size: cover;
     backdrop-filter: brightness(-5);
 }
+
+.bg-face{
+    background-image: url("../imgs/bg-face.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(-5);
+}

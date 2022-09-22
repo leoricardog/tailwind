@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tailwind CSS Test</title>
+</head>
+<body>
+
+<div class="grid grid-rows-10 text-center px-4 h-screen bg-face">
+    <div class="relative">
+        <a href="pin.html" class="absolute top-5 left-6 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"/>
+            </svg>
+        </a>
+    </div>
+
+    <div class="text-center py-4">
+        <h1 class="text-2xl font-bold text-white">
+            Face Recognition
+        </h1>
+        <h5 class="bold text-white">Add a face recognition to make your account more secure</h5>
+    </div>
+
+    <div class="grid grid-cols-4 row-span-6">
+        <div class="rounded-tl-3xl border-l-4 border-t-4 border-green-600"></div>
+        <div class="col-span-2"></div>
+        <div class="rounded-tr-3xl border-r-4 border-t-4 border-green-600"></div>
+        <div class="col-span-4 row-span-2"></div>
+        <div class="rounded-bl-3xl border-l-4 border-b-4 border-green-600"></div>
+        <div class="col-span-2"></div>
+        <div class="rounded-br-3xl border-r-4 border-b-4 border-green-600"></div>
+    </div>
+
+    <div class="flex items-end justify-center">
+        <div>
+            <h1 class="bold text-white text-6xl">100%</h1>
+            <p class="text-white my-4">Verifying your face</p>
+        </div>
+    </div>
+
+    <div class="grid content-end pb-4 grid-cols-2 gap-2">
+        <div>
+            <a href="face.html"
+               class="block w-full font-bold bg-gray-300 text-green-500 rounded-full py-4 hover:bg-green-800">Skip</a>
+        </div>
+        <div>
+            <a
+                    class="block w-full font-bold bg-green-500 text-white rounded-full py-4 hover:bg-green-800"
+                    data-modal-toggle="defaultModal">Verify</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Main modal -->
+<div id="defaultModal" tabindex="-1" aria-hidden="true"
+     class="hidden overflow-y-auto overflow-x-hidden fixed top-16 right-0 left-0 z-50 w-full h-modal md:h-full">
+    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-3xl shadow">
+            <!-- Modal body -->
+            <div class="p-6 flex justify-center grid grid-rows-2 gap-2">
+                <div class="flex justify-center">
+                    <img src="imgs/congratulations.png" alt="img">
+                </div>
+                <div class="text-center">
+                    <h3 class="text-3xl font-semibold text-green-600">
+                        <a data-modal-toggle="defaultModal" href="home.html"> Congratulations!</a>
+                    </h3>
+
+                    <p class="font-semibold text-gray-900 py-8">
+                        Your account is ready to use. You will be redirect to the home page in a few seconds...
+                    </p>
+                    <div class="flex justify-center">
+                        <svg aria-hidden="true" class="w-12 h-12  animate-[spin_2s_infinite] fill-green-500"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M304 48C304 74.51 282.5 96 256 96C229.5 96 208 74.51 208 48C208 21.49 229.5 0 256 0C282.5 0 304
+                21.49 304 48zM304 464C304 490.5 282.5 512 256 512C229.5 512 208 490.5 208 464C208 437.5 229.5 416 256
+                416C282.5 416 304 437.5 304 464zM0 256C0 229.5 21.49 208 48 208C74.51 208 96 229.5 96 256C96 282.5 74.51
+                304 48 304C21.49 304 0 282.5 0 256zM512 256C512 282.5 490.5 304 464 304C437.5 304 416 282.5 416 256C416
+                229.5 437.5 208 464 208C490.5 208 512 229.5 512 256zM74.98 437C56.23 418.3 56.23 387.9 74.98 369.1C93.73
+                350.4 124.1 350.4 142.9 369.1C161.6 387.9 161.6 418.3 142.9 437C124.1 455.8 93.73 455.8 74.98 437V437zM142.9
+                142.9C124.1 161.6 93.73 161.6 74.98 142.9C56.24 124.1 56.24 93.73 74.98 74.98C93.73 56.23 124.1 56.23 142.9
+                74.98C161.6 93.73 161.6 124.1 142.9 142.9zM369.1 369.1C387.9 350.4 418.3 350.4 437 369.1C455.8 387.9 455.8
+                418.3 437 437C418.3 455.8 387.9 455.8 369.1 437C350.4 418.3 350.4 387.9 369.1 369.1V369.1z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>

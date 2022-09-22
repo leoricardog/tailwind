@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tailwind CSS Test</title>
+
+</head>
+<body>
+<div class="grid grid-rows-12">
+    <div class="grid grid-cols-6 p-4">
+        <div class="flex items-center">
+            <img src="imgs/user.png" class="rounded-full h-12">
+        </div>
+        <div class="flex items-center col-span-3 grid grid-rows-2 px-4">
+            <div class="text-gray-500 text-xs">Deliver to</div>
+            <div>
+                <button id="dropdownDefault" data-dropdown-toggle="dropdown" type="button"
+                        class="focus:outline-none text-sm text-center inline-flex items-center">
+                    Time Square
+                    <svg class="ml-2 w-4 h-4  stroke-green-800" aria-hidden="true" fill="none" stroke="currentColor"
+                         viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdown"
+                     class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow">
+                    <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownDefault">
+                        <li>
+                            <a href="#"
+                               class="block py-2 px-4 hover:bg-gray-100">Other</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-end relative">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"/>
+                </svg>
+                <span class="bg-red-600 top-4 right-0 p-1 rounded-full absolute"></span></a>
+        </div>
+        <div class="flex items-center justify-end relative">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+                </svg>
+                <span class="bg-red-600 top-4 right-0 p-1 rounded-full absolute"></span>
+            </a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</div>
+</body>
+</html>
